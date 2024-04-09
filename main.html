@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatSphere</title>
+    <style>
+        p{
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 id="header-content">ChatSphere</h1>
+        </div>
+    </header>
+    <main>
+        <div class="chat-box" style="width: 50%; margin-left:15rem;">
+            <div class="messages" style="height:100px;overflow-y: scroll; margin-bottom: 2rem;">
+            </div>
+            <div class="input-container">
+                <form id="message-form">
+                    <input type="text" id="message-input" name="text" placeholder="Type your message...">
+                    <button type="submit" id="send-button">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('message-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            // Get the input value
+            var message = document.getElementById('message-input').value;
+            
+            // Create a new element
+            var newElement = document.createElement('p');
+            
+            // Add content to the new element
+            var textNode = document.createTextNode(message);
+            newElement.appendChild(textNode);
+            
+            // Append the new element to the container
+            document.querySelector('.messages').appendChild(newElement);
+            
+            // Clear the input field after sending the message
+            document.getElementById('message-input').value = '';
+        });
+    </script>
+</body>
+</html>

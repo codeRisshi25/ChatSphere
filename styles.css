@@ -1,0 +1,63 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 252, 252, 0.022);
+    backdrop-filter: blur(15px);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+#header-content {
+    position:relative;
+    text-align: /* background-image: linear-gradient( 150deg,rgb(86, 125, 157) 11.2%, rgb(38, 58, 124) 80.5% ); */center;
+    font-size: 3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(255, 252, 252, 0.797);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.85); 
+}
+
+.auth-wrapper{
+    background-color: aliceblue ;
+    padding: 2.5rem;
+    border-radius: 8px;
+    background-color: rgba(255, 252, 252, 0.066);
+    backdrop-filter: blur(15px);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(255, 252, 252, 0.797);
+}
+
+.input-here{
+    padding:  0.9rem  2.1rem;
+    background-color: transparent;
+    border-radius: 3px;
+    border-color: rgba(255, 252, 252, 0.391);
+    color: rgba(255, 252, 252, 0.599);
+    font-size:1.1rem
+}
+
+.hidden {
+    display: none;
+}
+
+.footer-text{
+    color: rgba(255, 252, 252, 0.599);
+    font-size: 1.8vh;
+}
